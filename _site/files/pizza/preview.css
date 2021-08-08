@@ -1,0 +1,11 @@
+.ad {
+    padding: 20px;
+    resize: none
+}
+
+
+#main {
+    display:flex;
+    flex-wrap: wrap;
+    
+}

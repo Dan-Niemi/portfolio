@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Int';
+    font-weight: 900;
+    font-style: normal;
+    unicode-range: U+000-5FF;
+    src: url('/fonts/int-heavy.woff2') format('woff2'), url('/fonts/int-heavy.woff') format('woff');
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#main {
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#message {
+    display: flex;
+    padding-bottom: 15vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 1.25rem;
+    max-width: 960px;
+    line-height: 1.67;
+    justify-content: center;
+    align-items:center;
+}
+#links {
+    border-top: 8px yellow solid;
+    background-color:white;
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    top: 0;
+    width: 100%;
+}
+#linklist {
+    display: inline-flex;
+    flex-wrap:wrap;
+    padding: 2%
+}
+#linklist li{
+    padding:6px 12px;
+}
+#images {
+   text-align: center
+}
+
+#logo {
+    padding-left: 20px;
+    padding-top: 24px;
+    padding-bottom: 36px;
+    width: 300px
+}
+
+.has-dropcap::first-letter{
+    font-family: 'Int';
+    font-size: 6.8rem;
+    float: left;
+    margin: 0.1em 0.1em 0.1em 0;
+    line-height: .5;
+}
+
+.large {
+    padding:32px;
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.large a{
+    color: black;
+    text-decoration:none
+}
+.large a::after {
+    content: "";
+    position: absolute;
+    transition: 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+
+.large a:hover:after {
+    background-color: yellow;
+    border: 5px solid yellow;
+    left: -8px;
+    bottom: -8px;
+    width: 110%;
+    height: 110%;
+    
+    
+}
+#linklist a {
+    font-weight:900;
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#linklist a::after {
+    content: "";
+    position: absolute;
+    transition: 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+
+a:hover:after {
+    background-color: yellow;
+    border: 5px solid yellow;
+    left: -8px;
+    bottom: -8px;
+    width: 110%;
+    height: 110%;
+    
+    
+}
