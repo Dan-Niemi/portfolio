@@ -1,20 +1,57 @@
 @font-face { font-family: 'Int'; font-weight: 900; font-style: normal; unicode-range: U+000-5FF; src: url('/fonts/int-heavy.woff2') format('woff2'), url('/fonts/int-heavy.woff') format('woff'); } 
 html { scroll-behavior: smooth; } 
-body { font-family: 'Libre Franklin', sans-serif; background-position: center; display: flex; justify-content: center; flex-direction: column; align-items: center; min-height: 100vh; } 
-#main { padding-top: 15%; display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 100%; } 
-#message { display: flex; flex-direction: column; padding-bottom: 32px; padding-left: 10vw; padding-right: 10vw; font-size: 1.25rem; max-width: 960px; line-height: 1.67; justify-content: center; align-items:center; } 
-#links { border-top: 8px yellow solid; background-color:white; position:fixed; display:flex; align-items:center; justify-content:center; top: 0; width: 100%; } 
-#linklist { display: inline-flex; flex-wrap:wrap; padding: 2%}
-#linklist li { padding:6px 12px; } 
-#images { text-align: center}
-#logo { padding-left: 20px; padding-top: 24px; padding-bottom: 36px; width: 300px}
-.has-dropcap::first-letter { font-family: 'Int'; font-size: 6.8rem; float: left; margin: 0.1em 0.1em 0.1em 0; line-height: .5; } 
-.large { padding-bottom:10vh; font-size: 1.75rem; font-weight: 900; text-align: center; }
-.large a { color: black; text-decoration:none}
-.large a:hover { background-color: yellow; border: 5px solid yellow; left: -8px; bottom: -8px; width: 110%; height: 110%;}
-#linklist a { font-weight:900; color: black; text-decoration: none; overflow: hidden; position: relative; z-index: 1; } 
-#linklist a::after { content: ""; position: absolute; transition: 0.1s cubic-bezier(0.19, 1, 0.22, 1); z-index: -1; } 
+body {
+  border-top: 8px yellow solid;
+  font-family: 'Libre Franklin', sans-serif;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+  max-width: 100%;
+}
+
+.nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+}
+.nav__list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 2%
+}
+.nav__list-item { padding:6px 12px; } 
+
+.section {max-width: 960px}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  padding: 24px;
+}
+.message__heading { font-size: 4rem; font-weight: bold; padding-bottom: 24px; } 
+.message__body { font-size: 1.25rem; line-height: 1.67; padding-bottom: 24px; } 
+.message__email { color: black; font-size: 1.75rem; font-weight: 900;  padding-bottom: 24px; } 
+
+
+
+.images { text-align: center } 
+.anchor-link { font-weight:900; color: black; text-decoration: none; overflow: hidden; position: relative; z-index: 1; } 
+.anchor-link::after { content: ""; position: absolute; transition: 0.1s cubic-bezier(0.19, 1, 0.22, 1); z-index: -1; } 
 a:hover:after { background-color: yellow; border: 5px solid yellow; left: -8px; bottom: -8px; width: 110%; height: 110%; } 
-.tiles { max-width: 1200px; margin: auto; display: grid; grid-template-columns: auto auto; gap: 36px; padding: 36px 36px}
-h4 { font-size: 2rem; font-weight: bold; padding: 16px}
-h2 { font-size: 4rem; font-weight: bold; padding: 48px 0 24px; } 
+.tiles { max-width: 1200px; margin: auto; display: grid; grid-template-columns: auto auto; gap: 36px; padding: 36px 36px } 
+
+h4 { font-size: 2rem; font-weight: bold; padding: 16px } 

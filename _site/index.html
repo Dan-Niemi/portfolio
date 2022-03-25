@@ -2,71 +2,78 @@
 <html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;900" rel="stylesheet">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dancorp</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;900" rel="stylesheet">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dancorp</title>
 </head>
 
 <body>
-    <div id="main">
-    <div id = "links">
-        
-        <ul id="linklist">
-            <li><a href = "#brand">Branding</a></li><li>
-            <li><a href = "#promosets">Promotions</a></li>
-            <li><a href = "#favorites">Logos/Packaging</a></li>
-            <li><a href = "#web">Web Design</a></li>
-            </ul>
-        </div>
-        <img alt = "Dancorp logo" id="logo" src="img/logo.svg" />
-        <div id="message">
-            <p>
-                Hi! I'm Dan Niemi. I've been lead designer at Kwik Trip for the
-                last 5 years, and I can put that experience to work, FOR YOOOUUUU! (I'm winking and pointing at you.)
-                I've added some samples of work below. Thanks!
-            </p>
-            <div class="large"><a href="mailto:niemdani@gmail.com">niemdani@gmail.com</a></div>
-        </div>
-        <div id = images>
-        <a id = "brand"> </a>
-            <h2>Branding</h2>
-            <img src = "img/img.jpg">
-        <a id = "kwikrewards"></a><img src = "img/img2.jpg">
-        <a id = "promosets"></a>
-            <h2>Promotions</h2>
-            <img src = "img/img3.jpg">
-        <a id = "initiatives"></a><img src = "img/img5.jpg">
-            <h2>Logos/Other</h2>
-            <a id = "favorites"></a><img src = "img/img6.jpg">
-                <br>
-        <a id = "web"></a>
-            <h2>Web Design</h2>
-            <div class="tiles">
-                <a href="https://coachmeyertribute.com/">
-                    <div class="tile">
-                        <img class = "thumb" src="img/donmeyer-thumb.png" alt="corp-guardians-thumb">
-                        <h4>Coach Meyer Tribute</h4>
-                    </div>
-                </a>
-                <a href="https://www.corporateguardians.org/">
-                    <div class="tile">
-                        <img class = "thumb" src="img/cgnew-thumb.png" alt="don-meyer-thumb">
-                        <h4>Corporate Guardians</h4>
-                    </div>
-                </a>
-            </div>
-            <h2>Video/Animation</h2>
-        <a id = "vids">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-BWy4ghwr0A3iM5JFN1nuogjGL-BiOXO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        
-        </div>
-        
+	<div class="main">
+		
 
-    </div>
+		<section class="section message">
+			<h1 class="message__heading">Hi! I’m Dan Niemi.</h1>
+			<p class = "message__body"> I’m a graphic designer and web developer from La Crosse, WI.
+				 Here are some samples of my work. </p>
+			<a class="message__email" href="mailto:niemdani@gmail.com">niemdani@gmail.com </a>
+		</section>
+		
+		<section class="nav">
+			<ul class="nav__list">
+				<li class="nav__list-item"><a class="anchor-link" href="#brand">Branding</a></li>
+				<li class="nav__list-item"><a class="anchor-link" href="#promosets">Promotions</a></li>
+				<li class="nav__list-item"><a class="anchor-link" href="#logos">Logos/Packaging</a></li>
+				<li class="nav__list-item"><a class="anchor-link" href="#web">Web Design</a></li>
+			</ul>
+		</section>
+
+		<div class="images">
+			<section class="section">
+				<a id="brand"></a>
+				<h2>Branding</h2>
+				<img src="img/img.jpg">
+				<img src="img/img2.jpg">
+			</section>
+			<section class="section">
+				<a id="promosets"></a>
+				<h2>Promotions</h2>
+				<img src="img/img3.jpg">
+				<img src="img/img5.jpg">
+			</section>
+			<section class="section">
+				<a id="logos"></a>
+				<h2>Logos/Other</h2>
+				<img src="img/img6.jpg">
+			</section>
+			<section class="section">
+				<a id="web"></a>
+				<h2>Web Design</h2>
+				<div class="tile-group">
+					<div class="tile">
+						<a href="https://coachmeyertribute.com/">
+							<img class="thumb" src="img/donmeyer-thumb.png" alt="corp-guardians-thumb">
+						</a>
+						<h4>Coach Meyer Tribute</h4>
+					</div>
+					<div class="tile">
+							<a href="https://www.corporateguardians.org/">
+								<img class="thumb" src="img/cgnew-thumb.png" alt="don-meyer-thumb">
+							</a>
+							<h4>Corporate Guardians</h4>
+						</div>
+				</div>
+
+			</section>
+			<h2>Video/Animation</h2>
+			<a id="vids">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL-BWy4ghwr0A3iM5JFN1nuogjGL-BiOXO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	</div>
+</body>
 </body>
 
 </html>
