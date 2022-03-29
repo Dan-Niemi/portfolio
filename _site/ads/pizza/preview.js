@@ -5,12 +5,12 @@ let files = [
     "json/160x600.json",
     "json/300x600.json",
     "json/728x90.json",
-    "KSjson/300x250.json",
-    "KSjson/300x50.json",
-    "KSjson/320x50.json",
-    "KSjson/160x600.json",
-    "KSjson/300x600.json",
-    "KSjson/728x90.json",
+    // "KSjson/300x250.json",
+    // "KSjson/300x50.json",
+    // "KSjson/320x50.json",
+    // "KSjson/160x600.json",
+    // "KSjson/300x600.json",
+    // "KSjson/728x90.json",
 ]
 
 files.forEach(name => loadFileName(name))
